@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi</title>
+    <link rel="stylesheet" href="../css/style-reservasi.css">
+    <link href="../assets/css/feather.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <a href="../html/home.html">HIGHLANDERS CAFE</a>
+            </h1>
+            <a href="#contact" class="nav__link">Hubungi kami</a>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="title">
+            <h1>Reservasi</h1>
+            <p>
+                Untuk melakukan reservasi, silakan isi formulir dengan tanggal dan waktu yang Anda inginkan.
+            </p>
+        </div>
+        <div class="form-content">
+            <form class="form-inline">
+                <div class="selection">
+                    <select name="Waktu makan">
+                        <option value="title">Waktu makan</option>
+                        <option value="breakfast">breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </div>
+                <input type="date" name="TanggalPilihan">
+                <div class="selection">
+                    <select name="Jumlah orang">
+                        <option value="title">Jumlah orang</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+            </form>
+            <form class="form-inline">
+                <input type="text" name="nama" placeholder="Nama" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="No. Telepon">
+            </form>
+            <form class="form-inline">
+                <input type="text" name="acarakhusus" placeholder="Acara Khusus (opsional)" />
+                <textarea name="sepecialrequest">Special Request (opsional)</textarea>
+            </form>
+        </div>
+        <div class="checkbox-container">
+            <input id="c1" type="checkbox">
+            <label for="c1">Saya ingin menerima berita dan penawaran dari Highlanders Cafe</label>
+        </div>
+        <a href="./reservasi-submit.html" class="btn">
+            <!--<form class="btn" action="/action_page.php" method="get"> -->
+            <button type="submit" formmethod="post"> <span>Kirim reservasi </span></button>
+            <!--</form>-->
+        </a>
+
+    </section>
+    <section class="about-container">
+        <div class="no-telepon" id="contact">
+            <i class="feather-phone"></i>
+            <p>0878-8410-7770</p>
+        </div>
+        <div class="alamat">
+            <ion-icon name="restaurant-outline"></ion-icon>
+            <p>
+                Highlanders Cafe, Jalan Gunung Batu, Bojong Koneng, Sentul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810
+            </p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <svg style="display: none;">
+        <symbol id="arrow-right" viewBox="0 0 20 10">
+            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+        </symbol>
+    </svg>
+</body>
+
+</html>

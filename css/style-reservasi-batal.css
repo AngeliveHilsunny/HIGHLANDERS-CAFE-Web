@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FCFCFE;
+    margin: auto auto;
+    font-family: "Lato", sans-serif;
+    width: 91%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: auto auto;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    padding-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a {
+    font-weight: 800;
+    font-size: 23px;
+    color: #095D6A;
+}
+
+nav a {
+    font-weight: 800;
+    font-size: 14px;
+    color: #095D6A;
+}
+
+.container {
+    width: 520px;
+    margin: auto auto;
+    margin-top: 30px;
+}
+
+.container ion-icon {
+    color: #FBBC58;
+    font-size: 104px;
+    position: absolute;
+    top: 280px;
+    margin-left: 45px;
+}
+
+.title {
+    height: 101px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #095D6A;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 159.5%;
+    /* or 26px */
+    text-align: center;
+    color: #8F8F8F;
+    margin-top: 6px;
+}
+
+.detail-container {
+    text-align: center;
+    color: #095D6A;
+    font-size: 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(143, 143, 143, 0.12);
+    border-radius: 30px;
+    width: 330px;
+    height: 173px;
+    padding-top: 23px;
+    margin: 109px auto;
+}
+
+.detail-container h3 {
+    font-weight: 800;
+}
+
+.detail-container h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: #FBBC58;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    margin: 57px 0px 50px;
+}
+
+.about-container,
+.no-telepon,
+.alamat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.no-telepon i,
+.alamat ion-icon {
+    color: #095D6A;
+    font-size: 24px;
+}
+
+.alamat,
+.no-telepon {
+    gap: 33px;
+    align-items: center;
+}
+
+.no-telepon p,
+.alamat p {
+    text-align: left;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-group button,
+.btn-batal {
+    font-weight: 900;
+    font-size: 15.8124px;
+    line-height: 19px;
+    align-items: center;
+    padding: 16px 0px 16px;
+    justify-content: center;
+    width: 158.26px;
+    text-align: center;
+}
+
+.btn-group button {
+    cursor: pointer;
+    font-family: 'Lato';
+    border: none;
+    background: #095D6A;
+    box-shadow: 4.44662px 5.55828px 25.5681px rgba(9, 93, 106, 0.33);
+    border-radius: 25.5681px;
+    color: #FBBC58;
+}
+
+.btn-batal {
+    border: 3.3px solid #095D6A;
+    filter: drop-shadow(4.44662px 5.55828px 25.5681px rgba(9, 93, 106, 0.33));
+    border-radius: 40px;
+    color: #095D6A;
+}

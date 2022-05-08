@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FCFCFE;
+    margin: auto auto;
+    font-family: "Lato", sans-serif;
+    width: 91%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: auto auto;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    padding-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a {
+    font-weight: 800;
+    font-size: 23px;
+    color: #095D6A;
+}
+
+nav a {
+    font-weight: 800;
+    font-size: 14px;
+    color: #095D6A;
+}
+
+.container {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(143, 143, 143, 0.12);
+    border-radius: 30px;
+    padding: 43px 116px 49px 116px;
+    margin: auto auto;
+    margin-top: 18px;
+}
+
+.title {
+    width: 473px;
+    height: 101px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #095D6A;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 159.5%;
+    /* or 26px */
+    text-align: center;
+    color: #8F8F8F;
+}
+
+.title {}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 33px;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    cursor: pointer;
+    font-family: 'Lato';
+    border: none;
+    background: #095D6A;
+    box-shadow: 4.44662px 5.55828px 25.5681px rgba(9, 93, 106, 0.33);
+    border-radius: 25.5681px;
+    color: #FBBC58;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 16px 22px 16px 22px;
+}
+
+.btn button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+form input,
+form textarea,
+form select {
+    border: 1px solid #D1D3D2;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8F8F8F;
+    font-family: 'Lato';
+    font-style: normal;
+    padding: 16.5px 16.5px 16.5px 16.6px;
+    margin-bottom: 22px;
+    display: block;
+    width: 327px;
+}
+
+.selection {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.selection:after {
+    content: '>';
+    font: 17px "Consolas", monospace;
+    color: #8F8F8F;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 10px;
+    /*Adjust for position however you want*/
+    top: 16px;
+    /*left line */
+    position: absolute;
+    pointer-events: none;
+}
+
+.selection select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    display: block;
+    height: 52px;
+    float: right;
+    padding: 0px 17px;
+    -ms-word-break: normal;
+    word-break: normal;
+    padding-right: 56px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+}
+
+textarea {
+    resize: none;
+    height: 126px;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #8F8F8F;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+
+.about-container,
+.no-telepon,
+.alamat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.no-telepon i,
+.alamat ion-icon {
+    color: #095D6A;
+    font-size: 24px;
+}
+
+.alamat,
+.no-telepon {
+    gap: 33px;
+}
+
+.no-telepon p,
+.alamat p {
+    text-align: left;
+}
