@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIGHLANDERS CAFE</title>
     <link rel="stylesheet" href="../css/style-home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +35,7 @@
                 <h1>
                     <span>Selamat datang</span><br> di dunia makanan berkualitas
                 </h1>
-                <a href="btn-jelajahi">Jelajahi menu</a>
+                <a href="#jelajahi">Jelajahi menu</a>
             </div>
             <img src="../media/header.png" alt="header-img">
             <div class="buka">
@@ -39,7 +46,158 @@
             </div>
         </div>
     </header>
+    <section class="tentangkami-container">
+        <img src="../media/logo.png" alt="logo">
+        <div class="text-tentangkami">
+            <h5>Tentang Kami</h5>
+            <p>
+                Highlanders Resort & Cafe merupakan salah satu objek wisata kuliner di Bogor yang baru viral diberbagai media sosial. Tempat ini memang tergolong masih sangat baru, karena baru dibuka pada 20 Februari 2021 kemarin.
+            </p>
+            <p>
+                Tempat ini menawarkan sebuah resort dan cafe dengan menyuguhkan view alam dari ketinggian. Mengingat Lokasi Highlanders Resort berada di area perbukitan tentunya viewnya indah dan suasananya menyegarkan.
+            </p>
+        </div>
+    </section>
+    <section class="product">
+        <h2 class="product-category">Menu paling <span>populer</span></h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">5% off</span>
+                    <img src="../media/populer2.png" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Roti bakar</h2>
+                    <p class="product-short-description">Roti bakar dengan coklat keju..</p>
+                    <span class="price">Rp 19.950,-</span><span class="actual-price">Rp 21.000,-</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">5% off</span>
+                    <img src="../media/food1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Dish pisang bakar</h2>
+                    <p class="product-short-description">penyajian indah pisang bakar coklat k..</p>
+                    <span class="price">Rp 19.950,-</span><span class="actual-price">Rp 21.000,-</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">15% off</span>
+                    <img src="../media/drink(1).jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Gula aren</h2>
+                    <p class="product-short-description">Minuman gula aren dengan cincau..</p>
+                    <span class="price">Rp 11.050,-</span><span class="actual-price">Rp 13.000,-</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">15% off</span>
+                    <img src="../media/drink2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Wedang jahe</h2>
+                    <p class="product-short-description">wedang jahe hangat cocok untuk..</p>
+                    <span class="price">Rp 11.050,-</span><span class="actual-price">Rp 13.000,-</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">17% off</span>
+                    <img src="../media/populer5.png" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">pisang goreng</h2>
+                    <p class="product-short-description">gurih dan manisnya pisang goreng..</p>
+                    <span class="price">Rp 12.450,-</span><span class="actual-price">Rp 15.000,-</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../media/food2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Tambah ke keranjang</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Tape goreng</h2>
+                    <p class="product-short-description">tapegoreng dengan coklat keju..</p>
+                    <span class="price">Rp 14.000,-</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-desc-container">
+        <div class="map-container">
+            <div class="text-map">
+                <h5>Kunjungi <span>langsung</span></h5>
+                <p>
+                    Highlanders Cafe, Jalan Gunung Batu, Bojong Koneng, Sentul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15853.012099763853!2d106.9019393!3d-6.6154541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51c8ea60c11e5bf7!2sHighlanders%20Cafe!5e0!3m2!1sid!2sid!4v1652057106437!5m2!1sid!2sid" width="478"
+                height="478" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="../media/foodbg1.png" alt="foodbg" class="foodbg1">
+        <img src="../media/foodbg2.png" alt="foodbg" class="foodbg2">
+        <div class="booking-container">
+            <div class="text-booking">
+                <h4>atau</h4>
+                <h5>Booking reservasi</h5>
+                <p>
+                    Untuk melakukan reservasi, silakan isi formulir dengan tanggal dan waktu yang Anda inginkan.
+                </p>
+                <a href="../html/reservasi.html" class="btn-booking">Book</a>
+            </div>
+        </div>
+    </section>
 
+    <section class="menu-container" id="jelajahi">
+        <img src="../media/foodbg.png" alt="foodmenu" class="food-menu">
+        <h3>Menu<span>Kami</span></h3>
+        <img src="../media/menu.png" alt="menu" class="menu">
+        <img src="../media/Menutext.png" alt="menu-background" class="menu-background">
+    </section>
+
+    <section class="footer">
+        <div class="footer-c">
+            <div class="icons-container">
+                <div class="content-icon">
+                    <i class="fas fa-clock"></i>
+                    <div class="icons">
+                        <h3>Opening hours</h3>
+                        <p>07:00am to 10:00pm</p>
+                    </div>
+                </div>
+                <div class="content-icon">
+                    <i class="fas fa-phone" id="contact"></i>
+                    <div class="icons">
+                        <h3>Phone</h3>
+                        <p>0878-8410-7770</p>
+                    </div>
+                </div>
+                <div class="content-icon">
+                    <i class="fas fa-map"></i>
+                    <div class="icons">
+                        <h3>Alamat</h3>
+                        <p>Highlanders Cafe, Jalan Gunung Batu, Bojong Koneng, Sentul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810</p>
+                    </div>
+                </div>
+            </div>
+            <div class="credit"> Copyright © 2022 inline Ltd. All Rights Reserved </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
